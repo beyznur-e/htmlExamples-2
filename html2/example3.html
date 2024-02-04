@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .bilgi{position: absolute;
+    margin-top: 90px;}
+    .tc{position: absolute;
+    margin-top: 60px;}
+    .cinsiyet{
+        position: absolute;
+        margin-top: 20px;}
+    .sola-kaydir{
+        float:left;
+        padding: 0px;}
+        </style>
+    <h1>İŞ BAŞVURU FORMU</h1>
+    <div class="foto">
+    <img width="350" height="200" src="resim/engel.jpg" class="sola-kaydir" alt="">
+    <form name="yukleme" method="post" action="index.php" enctype="multipart/form-data">
+        <table border="0">
+           <tr>
+            <br><br><br><br><br><br><br><br><br>
+              <td>Fotoğraf Seçiniz</td>
+              <td><input type="file" name="dosya"></td>
+           </tr>
+        </table>
+     </form>
+    </div>
+   <div class="cinsiyet">
+    <form action="" autocomplete="on">
+         Cinsiyet:
+        <input type="radio" name="cinsiyet" value="erkek"> Erkek &nbsp;
+        <input type="radio" name="cinsiyet" value="kadin"> Kadın &nbsp;
+    </form>
+   </div>
+   <div class="tc">
+    <form action="" autocomplete="on">
+        TC Kimlik No*  
+        <input type="number" name="tc">
+        Ad*
+        <input type="name" name="ad">
+       Soyad*
+       <input type="name" name="soyad">
+       Doğum Tarihi*
+       <input type="date" name="dtarih">
+    </form>
+   </div>
+   <div class="bilgi">
+<h2>KİŞİSEL BİLGİLER</h2>
+<form action="" autocomplete="on">
+    <label for="dogumyer">Doğum Yeri*</label>
+    <select name="dogumyer" id="dogumyer">
+        <option value="">Seçiniz</option>
+        <option value="Ankara">Ankara</option>
+        <option value="İstanbul">İstanbul</option>
+        <option value="İzmir">İzmir</option>
+        <option value="Bursa">Bursa</option>
+    </select>
+    <br>
+    Baba Adı/Mesleği
+    <input type="name" placeholder="Baba Adı" name="adbaba">
+    <input type="name" placeholder="Mesleği" name="adbaba">
+    <br>
+    Anne Adı/Mesleği
+    <input type="name" placeholder="Anne Adı" name="adanne">
+    <input type="name" placeholder="Mesleği" name="adanne">
+    <br>
+    Askerlik Durumu*
+    <input type="radio" name="Muaf" value="muaf"> Muaf &nbsp;
+    <input type="radio" name="Yaptı" value="yaptı"> Yaptı &nbsp;
+    <input type="radio" name="Tecilli" value="tecil"> Tecilli &nbsp;
+    <br>
+    Muaf/Terhis/Tecil Tarihi*
+    <input type="date" name="askertarih">
+    <br>
+    Medeni Durumu*
+    <input type="radio" name="bekar" value="bekar"> Bekar &nbsp;
+    <input type="radio" name="evli" value="evli"> Evli &nbsp;
+    <br>
+    <label for="adres">Ev Adresi*</label>
+    <textarea id="adres" cols="50" rows="4"></textarea>
+    <br>
+    <label for="sehir">Şehir*</label>
+    <select name="sehir" id="sehir">
+        <option value="">Seçiniz</option>
+        <option value="Ankara">Ankara</option>
+        <option value="İstanbul">İstanbul</option>
+        <option value="İzmir">İzmir</option>
+        <option value="Bursa">Bursa</option>
+    </select>
+    <label for="ilce">İlçe*</label>
+    <select name="ilce" id="ilce">
+        <option value=""></option>
+        <option value="Ankara">Etimesgut</option>
+        <option value="İstanbul">Sincan</option>
+        <option value="İzmir">Çankaya</option>
+        <option value="Bursa">Yenişehir</option>
+    </select>
+    <br>
+    E-posta*
+    <input type="email" name="posta">
+    Telefon*  
+    <input type="tel" name="tel">
+    Cep Telofonu*  
+    <input type="tel" name="ctel">
+    <h2>ÖĞRENİM DURUMU</h2><br>
+    Lisans
+    <input type="text" name="lisans">
+    Bölüm
+    <input type="text" name="bolum">
+    Başlama Tarihi
+    <input type="number" placeholder="Başlama Yılınızı Giriniz...">
+    Mezuniyet Tarihi
+    <input type="number" placeholder="Mezuniyet Yılınızı Giriniz...">
+    <br>
+    Önlisans
+    <input type="text" name="lisans">
+    <input type="text" name="bolum">
+    <input type="number" placeholder="Başlama Yılınızı Giriniz...">
+    <input type="number" placeholder="Mezuniyet Yılınızı Giriniz...">
+    <br>
+    Lise
+    <input type="text" name="lisans">
+    <input type="text" name="bolum">
+    <input type="number" placeholder="Başlama Yılınızı Giriniz...">
+    <input type="number" placeholder="Mezuniyet Yılınızı Giriniz...">
+    <br>
+    İlköğretim
+    <input type="text" name="lisans">
+    <input type="text" name="bolum">
+    <input type="number" placeholder="Başlama Yılınızı Giriniz...">
+    <input type="number" placeholder="Mezuniyet Yılınızı Giriniz...">
+    <h2>ÇALIŞMA HAYATI</h2>
+    BILP201'de daha önce çalıştınız mı?
+    <input type="radio"> Hayır &nbsp;
+    <input type="radio"> Evet
+    <br>
+    Şirketimizde çalışan yakınınız var mı?
+    <input type="radio"> Hayır &nbsp;
+    <input type="radio"> Evet
+    <br>
+    <h3>(Lütfen son çalıştığınız yerden itiaren yazınız)</h3>
+    İşyerinin adı 
+    <input type="text">
+    Görev
+    <input type="text">
+    Başlangıç
+    <input type="number" placeholder="Başlangıç yılınız...">
+    Bitiş
+    <input type="number" placeholder="Bitiş yılınız...">
+    Ayrılma Sebepleri
+    <input type="text">
+    <hr>
+    İşyerinin adı 
+    <input type="text">
+    Görev
+    <input type="text">
+    Başlangıç
+    <input type="number" placeholder="Başlangıç yılınız...">
+    Bitiş
+    <input type="number" placeholder="Bitiş yılınız...">
+    Ayrılma Sebepleri
+    <input type="text">
+    <hr>
+    İşyerinin adı 
+    <input type="text">
+    Görev
+    <input type="text">
+    Başlangıç
+    <input type="number" placeholder="Başlangıç yılınız...">
+    Bitiş
+    <input type="number" placeholder="Bitiş yılınız...">
+    Ayrılma Sebepleri
+    <input type="text">
+    <h2>REFERANSLAR</h2>
+    <h3>(Çalıştığınız şirketlerden, çalışmıyor iseniz öğretmen veya akrabanız olmayan kişilerden en az bir referans yazmalısınız)</h3>
+    Adı Soyadı*
+    <input type="text">
+    Yakınlık Derecesi
+    <input type="text">
+    İşyerinin Adı*
+    <input type="text">
+    Görev*
+    <input type="text">
+    Telefon*
+    <input type="tel">
+    <hr>
+    Adı Soyadı*
+    <input type="text">
+    Yakınlık Derecesi
+    <input type="text">
+    İşyerinin Adı*
+    <input type="text">
+    Görev*
+    <input type="text">
+    Telefon*
+    <input type="tel">
+</form>
+   </div>
+</body>
+</html>
